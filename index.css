@@ -161,6 +161,7 @@ a:hover{
 .img-container figure{
     animation: rotation 4s;
     animation-fill-mode: forwards;
+    animation-delay: 0.5s;
 }
 
 @keyframes rotation{
