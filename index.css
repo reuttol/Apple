@@ -1,0 +1,355 @@
+@font-face {
+    font-family: "SF Pro Display";
+    font-style: normal;
+    font-weight: 100;
+    src: local("☺"), url("assets/fonts/sf-pro-display_regular.woff2") format("woff2"),
+      url("assets/fonts/sf-pro-display_regular.woff2") format("woff2");
+    /* (C) 2019 Apple Inc. All rights reserved.
+   */
+  }
+  
+  @font-face {
+    font-family: "SF Pro Display";
+    font-style: normal;
+    font-weight: 600;
+    src: local("☺"), url("assets/fonts/sf-pro-display_semibold.woff2") format("woff2"),
+      url("assets/fonts/sf-pro-display_semibold.woff2") format("woff2");
+    /* (C) 2019 Apple Inc. All rights reserved.
+   */
+  }
+  
+  @font-face {
+    font-family: "SF Pro Text";
+    font-style: normal;
+    font-weight: 600;
+    src: local("☺"), url("assets/fonts/sf-pro-text_semibold.woff2") format("woff2"),
+      url("assets/fonts/sf-pro-text_semibold.woff2") format("woff2");
+    /* (C) 2019 Apple Inc. All rights reserved.
+   */
+  }
+  
+  @font-face {
+    font-family: "SF Pro Text";
+    font-style: normal;
+    font-weight: 400;
+    src: local("☺"), url("assets/fonts/sf-pro-text_regular.woff2") format("woff2"),
+      url("assets/fonts/sf-pro-text_regular.woff2") format("woff2");
+  
+    /* (C) 2019 Apple Inc. All rights reserved.
+   */
+  }
+  
+  @font-face {
+    font-family: "SF Pro Icons";
+    font-style: normal;
+    font-weight: 400;
+    src: local("☺"), url("/fonts/sf-pro-icons_regular.woff2") format("woff2"),
+      url("/fonts/sf-pro-icons_regular.woff2") format("woff2");
+    /* (C) 2019 Apple Inc. All rights reserved.
+   */
+  }
+
+:root{
+    font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;;
+ 
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+}
+
+
+.nav-container{
+    background-color: #333333;
+    padding: 0 2rem;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+    opacity: 0.95;
+}
+.navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 8vh;
+}
+.navbar__item{ 
+    padding-left: 3rem;
+}
+.navbar__item-tag{
+    color: #D2D2D7;
+}
+.navbar__item-tag:hover{
+    color: #fff;
+    text-decoration: none;
+    transition: all 0.1s;
+}
+.white-text{
+    color: #f5f5f7;
+}
+.header{
+    background-color: #E34140;
+    color: #f5f5f7;
+    /* padding-bottom: 1.1rem; */
+    height: 14vh;
+    font-size: 1.1rem;
+    display: flex;
+    flex-direction: column;
+}
+.header-hidden{
+    height: 8vh;
+    width: 100%;
+}
+.header-text{
+    height: 6vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.links{
+    font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;;
+    display: flex;
+}
+.tag-color{
+    color: #06c;
+}
+.links-tag{
+    padding: 0 1rem;
+    font-size: 1.3rem;
+}
+
+.row-grid{
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    gap: 1rem;
+}
+.page1-top{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 2rem 0;
+}
+.img-container{
+    display: flex;
+    padding-top: 1rem;
+    justify-content: center;
+    height: 150%;
+}
+.page1-top > h2{
+    font-size: 3.5rem;
+    font-weight: 600;
+}
+.page1-top > div > a{
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.img-container figure{
+    animation: rotation 4s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes rotation{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(5deg);
+    }
+}
+
+.page2{
+    background: url(assets/images/hero_iphone_13pro__dhnsegysa42u_large.jpg) no-repeat center center/cover;
+}
+.page3{
+    background: url(assets/images/hero_iphone_13__f194u1rdooeq_large.jpg) no-repeat center center/cover;
+}
+
+.page2-top, .page3-top{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 2rem 0;
+}
+
+.page2-top > h2, .page3-top > h2{
+    font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 3rem;
+}
+
+.page2-top > h3, .page3-top > h3{
+    font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 1.5rem;
+}
+
+.pink-text{
+    color: #fec2eb;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* justify-items: center;
+    align-items: center; */
+    gap: 0.5rem;
+    margin: 0.5rem;
+}
+.info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    gap: 0.5rem;
+    padding-top: 2.5rem;
+}
+.info > h4{
+    font-size: 2rem;
+}
+.info > h5{
+    font-size: 1.5rem;
+
+}
+.tile{
+    height: calc(100vh - 45px);
+}
+
+.tile1{
+    background: url(assets/images/tile_macbookpro__cx0ur0qg9biq_large.jpg) no-repeat center center/cover;
+}
+.tile2{
+    background: url(assets/images/tile_watch__e9n11b6m6yq2_large.jpg) center center/cover;
+}
+.tile3{
+    background: url(assets/images/tile_homepod_mini__b73w4z3ljymu_large.jpg) center center/cover;
+}
+.tile4{
+    background: url(assets/images/tile_lego_castaways__d2v36ez91ewm_large.jpg) center center/cover;
+}
+.tile5{
+    background: url(assets/images/tile__cauwwcyyn9hy_large.jpg) center center/cover;
+}
+.tile6{
+    background: url(assets/images/promo_dickinson__c9ea4l2f5rki_large.jpg) center center/cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+.no-decor:hover{
+    text-decoration: none;
+}
+.try-free a, .more a{
+    margin: 0;
+    padding: 0;
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* justify-content: center; */
+}
+.more{
+    padding-right: 2rem;
+}
+.sup-links{
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+}
+.bottom-info{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 1.8rem;
+}
+.top-info{
+    display: flex;
+    justify-content: center;
+    padding-top: 4rem;
+}
+.img-below{
+    padding: 2rem 0 1rem 0;
+}
+.new{
+    color: #bf4800;
+}
+
+
+.footer{
+    background-color: #F5F5F7;
+    padding: 1rem 12rem;
+    padding-bottom: 2rem;
+    font-size: 0.9rem;
+    
+}
+.footnotes{
+    padding: 1rem 0;
+    border-bottom: solid 1px #D2D2D7;
+    color: #6E6E73;
+}
+.footnotes > ul > li{
+    padding-bottom: 0.8rem;
+}
+.footnotes > ul > li > a{
+    color: #424245;
+}
+.footer-links{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    padding-bottom:3rem;
+}
+.col > label > h3{
+    padding-top: 2rem;
+    color: #1D1D1F;
+}
+.col > ul > li {
+    padding-top: 1rem;
+}
+.col > ul > li > a{
+    color: #424245;
+}
+
+.a-highlight{
+    color: #0066cc;
+}
+.footer-shop{
+    border-bottom: solid 1px #D2D2D7;
+    padding-bottom: 0.7rem;
+}
+.legal-info{
+    display: flex;
+    padding-top: 1rem;
+}
+.legal-links{
+    display: flex;
+    margin-left: 1.2rem;
+}
+.legal-links > a{
+    border-right: solid 1px #D2D2D7;
+    color: #6E6E73;
+    padding: 0 0.5rem;
+}  
+.legal-links > a:last-child{
+    border-right: none;
+}
+.country{
+    margin-left: auto;
+}
+.country > a{
+    color: #6E6E73;
+}
