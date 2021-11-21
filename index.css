@@ -143,12 +143,7 @@ a:hover{
     gap: 1rem;
     padding: 2rem 0;
 }
-.img-container{
-    display: flex;
-    padding-top: 1rem;
-    justify-content: center;
-    height: 150%;
-}
+
 .page1-top > h2{
     font-size: 3.5rem;
     font-weight: 600;
@@ -157,11 +152,28 @@ a:hover{
     font-size: 1.5rem;
     font-weight: 400;
 }
+.page1{
+    height: calc(100vh - 14vh);
+}
+.page1-bottom{
+    position: relative;
+    height: 50%;
+}
+.img-container1, .img-container2, .img-container3{
+    position: absolute;
+    top: 0;
+    left: 25%;
+    visibility: hidden ;
+    height: 150%;
+    display: flex;
+    padding-top: 1rem;
+
+}
 
 .img-container figure{
     animation: rotation 4s;
     animation-fill-mode: forwards;
-    animation-delay: 0.5s;
+    animation-delay: 0.2s;
 }
 
 @keyframes rotation{
