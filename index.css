@@ -158,11 +158,14 @@ a:hover{
 .page1-bottom{
     position: relative;
     height: 50%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
 }
 .img-container1, .img-container2, .img-container3{
     position: absolute;
     top: 0;
-    left: 18%;
+    /* left: 15%; */
     visibility: hidden ;
     height: 100%;
     display: flex;
