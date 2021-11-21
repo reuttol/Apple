@@ -162,7 +162,7 @@ a:hover{
 .img-container1, .img-container2, .img-container3{
     position: absolute;
     top: 0;
-    left: 25%;
+    left: 18%;
     visibility: hidden ;
     height: 100%;
     display: flex;
