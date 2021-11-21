@@ -153,7 +153,7 @@ a:hover{
     font-weight: 400;
 }
 .page1{
-    height: calc(100vh - 14vh);
+    height: calc(100vh - 12vh);
 }
 .page1-bottom{
     position: relative;
@@ -166,7 +166,7 @@ a:hover{
     visibility: hidden ;
     height: 100%;
     display: flex;
-    padding-top: 1rem;
+    /* padding-top: 1rem; */
 
 }
 
