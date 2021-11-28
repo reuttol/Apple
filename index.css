@@ -43,8 +43,8 @@
     font-family: "SF Pro Icons";
     font-style: normal;
     font-weight: 400;
-    src: local("☺"), url("/fonts/sf-pro-icons_regular.woff2") format("woff2"),
-      url("/fonts/sf-pro-icons_regular.woff2") format("woff2");
+    src: local("☺"), url("assets/fonts/sf-pro-icons_regular.woff2") format("woff2"),
+      url("assets/fonts/sf-pro-icons_regular.woff2") format("woff2");
     /* (C) 2019 Apple Inc. All rights reserved.
    */
   }
